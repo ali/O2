@@ -20,237 +20,235 @@
 	<link rel="shortcut icon" href="{Favicon}"/>
 	
 	<!-- Vars -->
-	<meta name="color:Background" content="#fff"/>
-	<meta name="color:Text" content="#444"/>
-	<meta name="color:Secondary" content="#888"/>
-	<meta name="color:Minor" content="#bbb"/>
-	<meta name="color:Link" content="#000"/>
-	<meta name="font:Body" content="'Helvetica Neue', Arial, Helvetica, sans-serif"/>
-	<meta name="if:Dark colour scheme" content="0"/>
-	<meta name="if:Show post notes" content="1"/>
-	<meta name="if:Show the number of post notes" content="0"/>
-	<meta name="if:Semitransparent audio player" content="1"/>
-	<meta name="if:Link to liked posts" content="0"/>
-	<meta name="if:Link to theme" content="0"/>
-	<meta name="text:Footer Text" content="Tumblr powered. Minty fresh." />
-	<meta name="text:Disqus Shortname" content="" />
+  <meta name="color:Background" content="#fff"/>
+  <meta name="color:Text" content="#444"/>
+  <meta name="color:Secondary" content="#888"/>
+  <meta name="color:Minor" content="#bbb"/>
+  <meta name="color:Link" content="#000"/>
+  <meta name="font:Body" content="'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif" />
+  <meta name="if:Dark colour scheme" content="0"/>
+  <meta name="if:Show post notes" content="1"/>
+  <meta name="if:Semitransparent audio player" content="0"/>
+  <meta name="if:Link to liked posts" content="0"/>
+  <meta name="if:Post Footers" content="0"/> 
+  <meta name="text:Disqus Shortname" content="" />
+  <meta name="text:Footer Text" content="Tumblr powered. Minty fresh." />
    
   <!-- Styles -->
-  <link rel="stylesheet" href="http://aliukani.com/img/reset.css" />
-	<style type="text/css">
-   :focus {outline: 0;}
-    ins {text-decoration: underline;}
-    del {text-decoration: line-through;}
-    a {text-decoration: none;}
+  <link rel="stylesheet" href="http://aliukani.com/_/css/reset.css" />
+<style type="text/css">
+:focus {outline: 0;}
+ins {text-decoration: underline;}
+del {text-decoration: line-through;}
+a {text-decoration: none;}
 
-    body{
-      font: 1em/1.5em {font:Body};
-      background-color: {color:Background};
-      color: {color:Text};
-      padding: 1.5em 0.25em;
-    }
-    body.dark {text-shadow: {color:Background} 0 0 1px;} /* Apply text shadows if using a dark color scheme. */
+body{
+  font: 1em/1.5em {font:Body};
+  background-color: {color:Background};
+  color: {color:Text};
+  padding: 1.5em 0.25em;
+}
+body.dark {text-shadow: {color:Background} 0 0 1px;} /* Apply text shadows if using a dark color scheme. */
 
-    #wrapper{
-      width: 500px;
-      margin: 0 auto;
-      position: relative;
-    }
-    
-    /* Text Styles */
-    h1 {font-size: 3em; line-height:1; padding:0.5em 0 1em; text-align:center;}
-    h1 a {color: {color:Text}; padding: 0 0.25em; font-weight: bold;}
-    h2, h3 {line-height: 18pt;}
-    p, pre, ul, ol, blockquote, form {margin: 0.75em 0 1.5em; line-height: 1.5em;}
-    blockquote {padding-left: 1em; border-left: 0.25em solid {color:Minor};}
-    pre {overflow-x: auto; font-size: 0.95em;}
-    sup, sub {height: 0; line-height: 1; vertical-align: baseline; _vertical-align: bottom; position: relative;}
-      sup {bottom: 0.5ex;}
-      sub {top: 0.5ex;}
-      sup a {font-weight: normal !important; padding: 0 1px;}
-    hr {height: 0; margin: 0 0 18pt; border: solid {color:Minor}; border-width: 2pt 0 0;}
+#wrapper{
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
 
-    /* Header */
-    header{clear: both;}
-    
-    /* Sidebar */
-    #description {
-      position: absolute;
-      left: 36.2em;
-      width: 10.5em;
-      color: #bbb;
-      font-size: 0.95em;
-      margin:0 10px 0 10px; /* Add gutters */
-    }
-    #description p, #description form, #description ul {margin-top: 0;}
-    #description a {color: {color:Secondary};}
-    #description a:hover {color: {color:Text};}
-      /*#description form .input{
-        background: {color:Background};
-        color: {color:Secondary};
-        font-size: 0.8em;
-        text-transform: lowercase;
-        width: 100%;
-        border: solid {color:Minor};
-        border-width: 0 1px 1px 0;
-      }*/
-      #description .submit{height: 0; overflow: hidden; display: none;}
-    #description ul {list-style: none; word-spacing: 0.25em; font-size: 10pt; text-transform: uppercase;}
-    #description ul a {color: {color:Minor};}
-    #description ul a:hover {color: {color:Text};}
+/* Text Styles */
+h1 {font-size: 3em; line-height:1; padding:0.5em 0 1em; text-align:center;}
+h1 a {color: {color:Text}; padding: 0 0.25em; font-weight: bold;}
+h2, h3 {line-height: 18pt;}
+p, pre, ul, ol, blockquote, form {margin: 0.75em 0 1.5em; line-height: 1.5em;}
+blockquote {padding-left: 1em; border-left: 0.25em solid {color:Minor};}
+pre {overflow-x: auto; font-size: 0.95em;}
+sup, sub {height: 0; line-height: 1; vertical-align: baseline; _vertical-align: bottom; position: relative;}
+  sup {bottom: 0.5ex;}
+  sub {top: 0.5ex;}
+  sup a {font-weight: normal !important; padding: 0 1px;}
+hr {height: 0; margin: 0 0 18pt; border: solid {color:Minor}; border-width: 2pt 0 0;}
 
-    /* Content area (main column) */
-    #content {
-      position:relative;
-    }
-    
-    /* Article (blog post) */
-    article {margin-bottom: 4.5em;}
-    article ul, article ol{margin-left: 0em;}
-      article ul ul, article ul ol, article ol ol, article ol ul{margin-left: 1.5em;} /* Indents only for lists within lists */
-      article li {list-style: square inside;}
-    
-    article img{max-width: 100%;}
-    
-    /* Add drop shadow to images, photos, vidoes, and audio. */
-    article img, .media img, .media embed, .media iframe, .media audio, .media video{
-      -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-    }
-    	.media a, .media a:hover{border:0;}
+/* Header */
+#header{clear: both;}
 
-    article h3 {font-size: 1.25em; position: relative;}
-    article a {color: {color:Link}; border-bottom: 1px solid transparent;}
-    article a:hover {color: {color:Text}; border-bottom-color: {color:Minor};}
+/* Sidebar */
+#description {
+  position: absolute;
+  left: 36.2em;
+  width: 10.5em;
+  color: #bbb;
+  font-size: 0.95em;
+  margin:0 10px 0 10px; /* Add gutters */
+}
+#description p, #description form, #description ul {margin-top: 0;}
+#description a {color: {color:Secondary};}
+#description a:hover {color: {color:Text};}
+  /*#description form .input{
+    background: {color:Background};
+    color: {color:Secondary};
+    font-size: 0.8em;
+    text-transform: lowercase;
+    width: 100%;
+    border: solid {color:Minor};
+    border-width: 0 1px 1px 0;
+  }*/
+  #description .submit{height: 0; overflow: hidden; display: none;}
+#description ul {list-style: none; word-spacing: 0.25em; font-size: 10pt; text-transform: uppercase;}
+#description ul a {color: {color:Minor};}
+#description ul a:hover {color: {color:Text};}
 
-    {block:IfNotPostFooters}
-    /* Permalinks (left of the post) */
-    .permalink {
-      position:absolute;
-      right: 36.8em;
-      font-size: 0.95em;
-      text-align: right;
-    }
-    .permalink a {color: {color:Minor}; white-space: nowrap; padding: 0; border: 0;}
-    .permalink a:hover {color: {color:Text};}
-    {/block:IfNotPostFooters}
+/* Content area (main column) */
+#content {
+  position:relative;
+}
 
+/* Article (blog post) */
+article {margin-bottom: 4.5em;}
+article ul, article ol{margin-left: 1.5em;}
+  article ul ul, article ul ol, article ol ol, article ol ul{margin-left: 1.5em;} /* Indents only for lists within lists */
+  article li {list-style: square inside;}
 
-    .caption, .cite {font-size: 0.95em;margin-top: 0.75em;}
-    .caption p {margin-top: 1.5em;}
+article img{max-width: 100%;}
 
-    /* Post Body */
-    .post-body{position: relative;}
-    .post-body a{font-weight:bold;}
+/* Add drop shadow to images, photos, vidoes, and audio. */
+article img, .media img, .media embed, .media iframe, .media audio, .media video{
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+	.media a, .media a:hover{border:0;}
+
+article h3 {font-size: 1.25em; position: relative;}
+article a {color: {color:Link}; border-bottom: 1px solid transparent;}
+article a:hover {color: {color:Text}; border-bottom-color: {color:Minor};}
+
+{block:IfNotPostFooters}
+/* Permalinks (left of the post) */
+.permalink {
+  position:absolute;
+  right: 36.8em;
+  font-size: 0.95em;
+  text-align: right;
+}
+.permalink a {color: {color:Minor}; white-space: nowrap; padding: 0; border: 0;}
+.permalink a:hover {color: {color:Text};}
+{/block:IfNotPostFooters}
 
 
-    /* Text Post */
-    .text {position: relative; top: -2pt;}
-    .text h3 {margin-bottom: 9pt;}
+.caption, .cite {font-size: 0.95em;margin-top: 0.75em;}
+.caption p {margin-top: 1.5em;}
 
-    /* Link Post */
-    .link {position: relative; top: -2pt;}
-    .link h3 {display: inline; padding-right:9pt;}
-      .link h3:After{content:" →"}
-    .link h3 a {color: {color:Link};}
-    .link h3 a:hover{color: {color:Text};}
-    
-    /* Quote Post */
-    .quote {position: relative; top: -4.5pt;}
-    .quote blockquote
-      {font-size: 18pt; line-height: 24pt; text-indent: -7pt;
-       margin: 0; padding: 0; border-width: 0;}
-    .quote blockquote:before {content: '“';}
-    .quote blockquote:after {content: '”';}
-    .quote blockquote a {color: {color:Text};}
-    .quote blockquote a:hover {color: {color:Secondary};}
-    .quote .cite {color: {color:Secondary}; margin-left: 1.5em; text-indent: -1.5em;}
-    
-    /* Chat Post */
-    .chat li {list-style: none; margin-left: 2em; text-indent: -2em;}
-    .chat b {font-weight: bold; padding-right: 4.5pt;}
+/* Post Body */
+.post-body{position: relative;}
+.post-body a{font-weight:bold;}
 
-    {block:IfSemitransparentAudioPlayer}
-    /* Audio Post - Semitransparent audio player */
-    .audioplayer {opacity: 0.75;}
-    {/block:IfSemitransparentAudioPlayer}
 
-    /* "Source: ~~~~" */
-    .post-source{color: {color:Secondary};}
-    .post-source .prefix{font-size: 0.9em; text-transform: uppercase;
-                          letter-spacing: 0.1em; word-spacing: 0.1em;}
-    .post-source a{color: {color:Minor};}
-    .post-source a:hover{color: {color:Text};}
+/* Text Post */
+.text {position: relative; top: -2pt;}
+.text h3 {margin-bottom: 9pt;}
 
-    {block:IfPostFooters}
-    /* Post Footers */
-    article footer{padding-top:0;color: {color:Secondary}; border-top: 1px solid {color:Secondary}; border-top-color: rgba(0,0,0,0.1); font-size: 0.8em;}
-    article footer a {color: {color:Minor};}
-    article footer a:hover {color: {color:Text};}
-    
-    article footer ul{margin:0;}
-    .meta li, .tags{display: inline;}
-    .meta>li:After{content: " \00a0\2022\00a0 ";}
-    .meta>li:last-child:after{content:"";}
+/* Link Post */
+.link {position: relative; top: -2pt;}
+.link h3 {display: inline; padding-right:9pt;}
+  .link h3:After{content:" →"}
+.link h3 a {color: {color:Link};}
+.link h3 a:hover{color: {color:Text};}
 
-    .tag{text-transform:lowercase;}
-      .tag:Before{content: "#";}
-      .tag:After{content:", ";}
-    {block:IfPostFooters}
+/* Quote Post */
+.quote {position: relative; top: -4.5pt;}
+.quote blockquote
+  {font-size: 18pt; line-height: 24pt; text-indent: -7pt;
+   margin: 0; padding: 0; border-width: 0;}
+.quote blockquote:before {content: '“';}
+.quote blockquote:after {content: '”';}
+.quote blockquote a {color: {color:Text};}
+.quote blockquote a:hover {color: {color:Secondary};}
+.quote .cite {color: {color:Secondary}; margin-left: 1.5em; text-indent: -1.5em;}
 
-    /* Stuff for the ends of permalink pages */
-    #disqus_thread {margin-top: 54pt;}
-    #disqus_thread a {color: {color:Secondary};}
+/* Chat Post */
+.chat li {list-style: none; margin-left: 2em; text-indent: -2em;}
+.chat b {font-weight: bold; padding-right: 4.5pt;}
 
-    .notes {color: {color:Minor}; margin-top: 54pt;}
-    .notes li {list-style: none; margin-bottom: 18pt;}
-    .notes img, .notes .clear {display: none;}
-    .notes .photo_container img {display: block !important;}
-    .notes a {color: {color:Secondary};}
-    .notes a:hover {color: {color:Text};}
+{block:IfSemitransparentAudioPlayer}
+/* Audio Post - Semitransparent audio player */
+.audioplayer {opacity: 0.75;}
+{/block:IfSemitransparentAudioPlayer}
 
-    .footnotes a[rev="footnote"] {color: {color:Secondary};}
-    .footnotes hr {margin: 34pt 0 18pt;}
+/* "Source: ~~~~" */
+.post-source{color: {color:Secondary};}
+.post-source .prefix{font-size: 0.9em; text-transform: uppercase;
+                      letter-spacing: 0.1em; word-spacing: 0.1em;}
+.post-source a{color: {color:Minor};}
+.post-source a:hover{color: {color:Text};}
 
-    /* Pagination (next/prev links) */
-    #paging {text-align: center; word-spacing: 0.75em; margin:0 0 2em 0; clear:both;}
-    #paging a {color: {color:Secondary}; font-weight:bold; padding: 0.25em 0.5em;}
-    #paging a:hover {color: {color:Text};}
+{block:IfPostFooters}
+/* Post Footers */
+article footer{padding-top:0;color: {color:Secondary}; border-top: 1px solid {color:Secondary}; border-top-color: rgba(0,0,0,0.1); font-size: 0.8em;}
+article footer a {color: {color:Minor};}
+article footer a:hover {color: {color:Text};}
 
-    {block:IfFooterText}
-    /* Page footer (only enabled if there is text to be placed) */
-    #footer{color:{color:Secondary}; font-size:0.8em; clear:both;}
-    #footer a {color: {color:Minor};}
-    #footer a:hover {color: {color:Text};}
-    {/block:IfFooterText}
+article footer ul{margin:0;}
+.meta li, .tags{display: inline;}
+.meta>li:After{content: " \00a0\2022\00a0 ";}
+.meta>li:last-child:after{content:"";}
 
-    /* style ampersands (applied with Javascript) */
-    .amp {font-family: Palatino, 'Palatino Linotype', {font:Body}; font-style: italic;}
-    h1 .amp, h2 .amp, h3 .amp {font-family: Baskerville, Palatino, 'Palatino Linotype', {font:Body};}
-    pre .amp {font-family: inherit; font-style: inherit;}
+.tag{text-transform:lowercase;}
+  .tag:Before{content: "#";}
+  .tag:After{content:", ";}
+{block:IfPostFooters}
 
-    {block:IfDebugMode}
-    /* Debug Mode */
-    .permalink, article, #description{background-color: red;}
-    #content{background-color: gray;}
-    #wrapper{background-color: blue;}
-    {/block:IfDebugMode}
+/* Stuff for the ends of permalink pages */
+#disqus_thread {margin-top: 54pt;}
+#disqus_thread a {color: {color:Secondary};}
 
-    /* User's Custom CSS */
-    {CustomCSS}
-	</style>
+.notes {color: {color:Minor}; margin-top: 54pt;}
+.notes li {list-style: none; margin-bottom: 18pt;}
+.notes img, .notes .clear {display: none;}
+.notes .photo_container img {display: block !important;}
+.notes a {color: {color:Secondary};}
+.notes a:hover {color: {color:Text};}
+
+.footnotes a[rev="footnote"] {color: {color:Secondary};}
+.footnotes hr {margin: 34pt 0 18pt;}
+
+/* Pagination (next/prev links) */
+#paging {text-align: center; word-spacing: 0.75em; margin:0 0 2em 0; clear:both;}
+#paging a {color: {color:Secondary}; font-weight:bold; padding: 0.25em 0.5em;}
+#paging a:hover {color: {color:Text};}
+
+{block:IfFooterText}
+/* Page footer (only enabled if there is text to be placed) */
+#footer{color:{color:Secondary}; font-size:0.8em; clear:both;}
+#footer a {color: {color:Minor};}
+#footer a:hover {color: {color:Text};}
+{/block:IfFooterText}
+
+/* style ampersands (applied with Javascript) */
+.amp {font-family: Palatino, 'Palatino Linotype', {font:Body}; font-style: italic;}
+h1 .amp, h2 .amp, h3 .amp {font-family: Baskerville, Palatino, 'Palatino Linotype', {font:Body};}
+pre .amp {font-family: inherit; font-style: inherit;}
+
+{block:IfDebugMode}
+/* Debug Mode */
+.permalink, article, #description{background-color: red;}
+#content{background-color: gray;}
+#wrapper{background-color: blue;}
+{/block:IfDebugMode}
+
+/* User's Custom CSS */
+{CustomCSS}
+</style>
 </head>
 <body class="{block:IfDarkColourScheme}dark{/block:IfDarkColourScheme}">
 <div id="wrapper">
 
-<header>
+<header id="header" role="banner">
   <h1><a href="/">{Title}</a></h1>
 </header>
 
 <nav id="description">
   <p>{Description}</p>
-
   
   {block:HasPages}
   <ul id="pages">
@@ -279,137 +277,194 @@
 
 <div id="content">
   {block:SearchPage}
+  <div id="searching">
   <h2>You searched for "{SearchQuery}": </h2>
   {block:NoSearchResults}
   <h3>Bummer! No results found.</h3>
   {/block:NoSearchResults}<br /><br />
+  </div>
   {/block:SearchPage}
 
   {block:Posts}
-  <article class="post {TagsAsClasses}">	
-    {block:Date}
-    <aside class="permalink">
-      {block:NewDayDate}
-      <a title="{NoteCountWithLabel}" href="{Permalink}" clas="newdaydate"><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate>{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}</time></a>
-      {/block:NewDayDate}
-    </aside>
-    {/block:Date}
-    {block:IfNotPostFooters}
+  {block:Date}{block:NewDayDate}
+  <h1><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time></h1>{/block:NewDayDate}{/block:Date}
+  
+  <article class="{PostType} {TagsAsClasses}">
+  
+  {block:Text}
+  
+    {block:Title}
+    <header>
+   		<h1><a href="{Permalink}">{Title}</a></h1>
+    </header>
+    {/block:Title}
 
-    {block:Regular}
-    <div class="post-body text">
-      {block:Title}
-      <header>
-     		<h3>{Title}</h3>
-      </header>
-      {/block:Title}
-
-      {Body}
-    </div>
-    {/block:Regular}
-
-    {block:Link}
-    <div class="post-body link">
-      <h3><a href="{URL}">{Name}</a></h3>
-
-      {block:Description}
-      {Description}
-      {/block:Description}
-    </div>
-    {/block:Link}
-
-    {block:Photo}
-    <div class="post-body image">
-      <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</div>
-
-      {block:Caption}
-      <div class="caption">{Caption}</div>
-      {/block:Caption}
-    </div>
-    {/block:Photo}
-
-    {block:Video}
-    <div class="post-body video">
-      <div class="media">{Video-500}</div>
-
-      {block:Caption}
-      <div class="caption">{Caption}</div>
-      {/block:Caption}
-    </div>
-    {/block:Video}
-
-    {block:Audio}
-    <div class="post-body audio">
-      <div class="media audioplayer">{AudioPlayerBlack}</div>
-
-      {block:Caption}
-      <div class="caption">{Caption}</div>
-      {/block:Caption}
-    </div>
-    {/block:Audio}
-
-    {block:Quote}
-    <div class="post-body quote">
-      <blockquote>{Quote}</blockquote>
-
-      {block:Source}
-      &mdash;&#8194;{Source}
-      {/block:Source}
-    </div>
-    {/block:Quote}
-
-    {block:Conversation}
-    <div class="post-body chat">
-      {block:Title}
-      <h3>{Title}</h3>
-      {/block:Title}
-
-      <ol>
-        {block:Lines}
-        <li>
-          {block:Label}<b class="label">{Label}</b>{/block:Label}
-          {Line}
-        </li>
-        {/block:Lines}
-      </ol>
-    </div>
-    {/block:Conversation}
+    {Body}
     
-    {block:ContentSource}<p class="post-source">
-      <span class="prefix">{lang:Source}:</span> {SourceLink}
-    </p>{/block:ContentSource}
+    {block:More}<a href="{Permalink}" class="read-more">Read More</a>{/block:More}
+    
+  {/block:Text}
 
-    {block:IfPostFooters}<footer>
-      <ul class="meta">
-        {block:Date}<li><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}-05:00" pubdate>{ShortMonth} {DayOfMonth}, {Year}</time></li>{/block:Date}
-        <li><a href="{Permalink}" title="Permalink" class="Permalink">{NoteCountWithLabel}</a></li>
-        {block:HasTags}<li>
-    		<ul class="tags">
-    			{block:Tags}
-    			<li class="tag"><a href="{TagURL}">{Tag}</a></li>
-    			{/block:Tags}
-    		</ul>
-    		</li>{/block:HasTags}
-      </ul>
-    </footer>{/block:IfPostFooters}
 
-  </article>
 
-  {block:Permalink}
-  <section id="notes">
-    {block:IfDisqusShortname}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-    <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-    {/block:IfDisqusShortname}
+  {block:Link}
+    <header><h1><a href="{URL}">{Name}</a></h1></header>
 
-    {block:IfShowPostNotes}
-      {block:PostNotes}
-        {PostNotes}
-      {/block:PostNotes}
-    {/block:IfShowPostNotes}
-  </section>
-  {/block:Permalink}
+    {block:Description}{Description}{/block:Description}
+  {/block:Link}
+
+
+
+
+  {block:Photo}
+    <figure>
+    	<div class="media">
+    		{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+    	</div>
+    
+    	{block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+    </figure>
+  {/block:Photo}
+  
+  
+  {block:Photoset}
+  	<figure>
+  		<div class="media">
+  			{Photoset-500}
+  		</div>
+  		
+  		{block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+  	</figure>
+  {/block:Photoset}
+
+
+
+
+  {block:Quote}
+    <blockquote class="{Length}">{Quote}</blockquote>
+
+    {block:Source}<div class="source">
+    	&mdash;&#8194;{Source}
+    </div>{/block:Source}
+  {/block:Quote}
+  
+  
+  
+  
+
+  {block:Conversation}
+    {block:Title}<header>
+   		<h1>{Title}</h1>
+    </header>{/block:Title}
+
+    <ol>
+    {block:Lines}
+      <li class="{Alt}">
+      	{block:Label}<b class="label {UserNumber}">{Label}</b>{/block:Label}
+        {Line}
+      </li>
+      
+    {/block:Lines}
+    </ol>
+  {/block:Conversation}
+  
+
+
+
+  {block:Video}
+  	<figure>
+  		<div class="media">
+  			{Video-500}
+  		</div>
+  	
+    	{block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+    </figure>
+  {/block:Video}
+  
+  
+  
+  
+  
+  
+  
+  {block:Audio}
+  	<figure>
+  		<div class="media">
+  			{AudioPlayerWhite}
+  		</div>
+  	
+    	<figcaption>
+				<header>
+					{block:TrackName}<span class="track-name">{TrackName}</span>{/block:TrackName}
+					by {block:Artist}<span class="track-artist">{Artist}</span>{/block:Artist}
+				</header>
+				
+    		{block:Caption}{Caption}{/block:Caption}
+    	</figcaption>
+    </figure>
+    
+  {/block:Audio}
+  
+  
+  
+  
+  
+	{block:Answer}
+	    <div class="Q">
+	    	<b>{Asker} asked:</b>
+	    	
+	    	<blockquote>
+	    		{Question}
+	    	</blockquote>
+	    </div>
+	    
+	    <div class="A">
+	    	{Answer}
+	    </div>
+	{block:Answer}
+  
+  
+  
+  
+  
+  
+  
+  
+  {block:ContentSource}<span class="post-source">
+    <span class="prefix">{lang:Source}:</span> {SourceLink}
+  </span>{/block:ContentSource}
+
+  <footer>
+    <ul class="meta">
+      {block:Date}<li><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}-05:00" pubdate>{ShortMonth} {DayOfMonth}, {Year}</time></li>{/block:Date}
+      <li><a href="{Permalink}" title="Permalink" class="Permalink">{NoteCountWithLabel}</a></li>
+      {block:HasTags}<li>
+  		<ul class="tags">
+  			{block:Tags}
+  			<li class="tag"><a href="{TagURL}">{Tag}</a></li>
+  			{/block:Tags}
+  		</ul>
+  		</li>{/block:HasTags}
+    </ul>
+  </footer>
+
+</article>
+
+{block:Permalink}
+<div id="notes">
+  {block:IfDisqusShortname}
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+  <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+  {/block:IfDisqusShortname}
+
+  {block:IfShowPostNotes}
+    {block:PostNotes}
+      {PostNotes}
+    {/block:PostNotes}
+  {/block:IfShowPostNotes}
+</div>
+{/block:Permalink}
 
 {/block:Posts}
 </div><!-- End #posts -->
